@@ -1,4 +1,11 @@
 @extends('default.header')
+@section('head')
+    <style>
+        body {
+            background: #fff !important;
+        }
+    </style>
+@endsection
 
 @section('body')
     <div class="clip-path-element"></div>
@@ -137,9 +144,11 @@
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <p class="fw-800 fs-5 text-light">NEXT UFC PAY-PER-VIEW EVENT</p>
                 <p class="fs-1 mb-0" style="font-family: ufc;color: #d20a0a">UFC 294</p>
-                <p class="fw-900 fst-italic text-light" style="font-size: 5rem;letter-spacing: 2px">Prochazka vs Pereira</p>
+                <p class="fw-900 fst-italic text-light" style="font-size: 5rem;letter-spacing: 2px">Prochazka vs Pereira
+                </p>
                 <p class="fw-900 fs-2" style="color: rgba(255,255,255,.5)">SATURDAY, NOVEMBER 11, 2023</p>
-                <p class="mb-5 w-75 text-center text-light fw-500 fs-3">UFC returns to New York City. The main event will see former division champ, Jiří
+                <p class="mb-5 w-75 text-center text-light fw-500 fs-3">UFC returns to New York City. The main event will
+                    see former division champ, Jiří
                     Procházka, and former
                     middleweight titleholder, Alex Pereira, battle for the vacant UFC light heavyweight crown!</p>
                 <button type="button"
@@ -148,12 +157,15 @@
             </div>
         </div>
     </section>
-    <footer class="container-fluid px-0 border-bottom border-5" style="background: #161616;border-color: #d20a0a !important">
+    <footer class="container-fluid px-0 border-bottom border-5"
+        style="background: #161616;border-color: #d20a0a !important">
         <div class="py-4 px-2">
-            <img src="{{ asset('/images/logonotcolor.png') }}" alt="" width="200px" style="object-fit: contain">
+            <img src="{{ asset('/images/logonotcolor.png') }}" alt="" width="200px"
+                style="object-fit: contain">
         </div>
         <div class="d-flex justify-content-center align-items-center py-4 px-2" style="background: #0f0f0f">
-            <p class="fw-500 mb-0" style="color: #585b63">UFC and associated designs are registered and/or owned exclusively by Zuffa, LLC. © 2019 All rights reserved</p>
+            <p class="fw-500 mb-0" style="color: #585b63">UFC and associated designs are registered and/or owned
+                exclusively by Zuffa, LLC. © 2019 All rights reserved</p>
         </div>
     </footer>
 @endsection
