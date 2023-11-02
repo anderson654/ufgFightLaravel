@@ -41,4 +41,9 @@ class Fight extends Model
     {
         return $this->belongsTo(Athlete::class, 'winner_id');
     }
+
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
 }

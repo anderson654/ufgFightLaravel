@@ -32,4 +32,9 @@ class Event extends Model
         return $this->hasMany(Fight::class);
     }
 
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
+
 }

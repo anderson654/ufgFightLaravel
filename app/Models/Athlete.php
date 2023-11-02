@@ -33,4 +33,9 @@ class Athlete extends Model
         'wins_by_ko',
         'wins_by_sub',
     ];
+
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
 }

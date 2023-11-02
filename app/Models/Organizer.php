@@ -14,4 +14,8 @@ class Organizer extends Model
     {
         return $this->belongsTo(Address::class);
     }
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
 }
