@@ -28,7 +28,7 @@
                 <br>
                 <button type="button"
                     class="btn btn-outline-danger border-4 rounded-0 custom-btn-login now px-5 py-2 fw-900 fs-3 w-100"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal">assista
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" id='playVideo'>assista
                     agora</button>
                 <br>
                 <br>
@@ -40,10 +40,15 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-body">
-                    <iframe src="https://player.vimeo.com/video/879491202?h=8a89de1bd8&title=0&byline=0&portrait=0"
-                        width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="modal-content d-flex p-0" style="background: transparent">
+                    <div class="modal-body">
+
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="meuVideo"
+                                src="https://player.vimeo.com/video/36737096?h=48f73fad9e&autoplay=0&title=0&byline=0&portrait=0"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,5 +60,19 @@
         var alturaDaDiv = $("#customNav").outerHeight(true);
         $("#contentConteiner").css('padding-top', alturaDaDiv);
         console.log(alturaDaDiv);
+
+        $(document).ready(function() {
+            var modal = document.getElementById('exampleModal');
+            var video = document.getElementById('meuVideo');
+            var btnAutoPlay = document.getElementById('playVideo');
+
+            modal.onclick = function() {
+                modal.style.display = "none";
+                video.contentWindow.postMessage('{"method":"pause"}', '*');
+            }
+            btnAutoPlay.onclick = function() {
+                video.contentWindow.postMessage('{"method":"play"}', '*');
+            }
+        });
     </script>
 @endsection
