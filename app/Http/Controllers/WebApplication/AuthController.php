@@ -42,7 +42,7 @@ class AuthController extends Controller
         $user = User::create($attributes);
         auth()->login($user);
 
-        return redirect('/dashboard');
+        return redirect('/home');
     }
 
     public function login(Request $request)
@@ -57,7 +57,7 @@ class AuthController extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             $request->session()->regenerate();
 
-            return redirect()->intended('dashboard');
+            return redirect()->intended('home');
         }
 
         return back()->withErrors([

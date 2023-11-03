@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\WebApplication\AuthController;
 use App\Http\Controllers\WebApplication\DashBoardController;
+use App\Http\Controllers\WebApplication\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +37,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', [AuthController::class,'logout'])->name('logout');
 
     Route::resources([
-		'dashboard' => DashBoardController::class
+		'dashboard' => DashBoardController::class,
+		'home' => HomeController::class
 	]);
 });
