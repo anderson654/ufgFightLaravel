@@ -36,7 +36,8 @@ class AuthController extends Controller
             'email' => 'required|email|max:255|unique:users,email',
             'password' => 'required|min:5|max:255',
         ], [
-            'required' => 'O campo :attribute é obrigatorio.'
+            'required' => 'O campo :attribute é obrigatorio.',
+            'unique' => 'O :attribute já esta em uso.'
         ]);
         $user = User::create($attributes);
         auth()->login($user);
