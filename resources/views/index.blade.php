@@ -12,21 +12,13 @@
     <div class="container-fluid fixed-top p-0">
         <nav class="navbar navbar-expand-lg custom-sidebar shadow-sm" id="customNav">
             <div class="container-fluid mx-4">
-                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="200">
+                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="300">
                 <button class="navbar-toggler border-0 my-3" type="button" data-bs-toggle="collapse"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                     data-bs-theme="dark" id="btnopenmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    {{-- <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ppv</a>
-                        </li>
-                    </ul> --}}
                     <div class="m-3">
                         <button type="button"
                             class="btn btn-outline-danger border-3 rounded-0 custom-btn-login fs-7 me-3">LOG
@@ -57,44 +49,51 @@
         </div>
     </div>
     <section
-        class="container-fluid p-0 m-0 pb-5 min-vh-100 position-relative d-flex flex-column align-items-center justify-content-center"
-        style="overflow: hidden;background: rgba(0,0,0,.8)">
-        <video class="background-video" autoplay muted loop>
-            <source src="{{ asset('/video/ufcpass.mp4') }}" type="video/mp4">
-        </video>
-        <div class="container content-video" id="contentConteinerVideo">
-            <div class="d-flex flex-column align-items-center py-4">
-                <p class="fs-4 ufcfont text-uppercase text-white" style="letter-spacing: 2px;">welcome to</p>
-                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="500"><br><br>
-                <p class="text-center text-white fs-4" style="font-weight: 500;width: 60%">A FourBio Fight é uma plataforma
-                    inovadora de streaming dedicada ao universo das lutas. Com um catálogo abrangente, ela oferece acesso
-                    exclusivo a eventos ao vivo, lutas gravadas e perfis detalhados de lutadores renomados. A missão da
-                    empresa vai além do entretenimento, buscando transformar vidas por meio do poder do esporte, promovendo
-                    valores como determinação, disciplina e superação. Seja o usuário um apaixonado por artes marciais ou
-                    apenas curioso sobre esse universo, a FourBio Fight é o destino definitivo.</p><br><br>
-                <button type="button"
-                    class="btn btn-outline-danger border-4 rounded-0 custom-btn-signup now px-5 py-3 fw-900 fs-3">ASSINAR AGORA</button>
+        class="container-fluid p-0 m-0 pb-5 min-vh-100 position-relative d-flex flex-column align-items-center justify-content-center index"
+        style="overflow: hidden;">
+        <div class="container-fluid px-5 content-video" id="contentConteinerVideo">
+            <div class="d-flex flex-column py-4">
+                <div class="d-flex justify-content-center flex-column row">
+                    <div class="col-sm-6">
+                        <p class="fw-900 fs-900 text-uppercase" style="color: #c80000;font-size: 8rem;line-height: 1;white-space: nowrap">no fight,<br>no history</p>
+                        {{-- <p class="fs-4 ufcfont text-uppercase text-white" style="letter-spacing: 2px;">welcome to</p>
+                        <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="500"><br><br> --}}
+                        <p class="text-white fs-4" style="font-weight: 500;width: 100%;text-align: justify">A FourBio Fight é uma plataforma
+                            inovadora de streaming dedicada ao universo das lutas. Com um catálogo abrangente, ela oferece acesso
+                            exclusivo a eventos ao vivo, lutas gravadas e perfis detalhados de lutadores renomados. A missão da
+                            empresa vai além do entretenimento, buscando transformar vidas por meio do poder do esporte, promovendo
+                            valores como determinação, disciplina e superação. Seja o usuário um apaixonado por artes marciais ou
+                            apenas curioso sobre esse universo, a FourBio Fight é o destino definitivo.</p><br><br>
+                        <button type="button"
+                            class="btn btn-outline-danger border-4 rounded-5 custom-btn-signup now px-5 py-3 fw-900 fs-5" style="width: 100%">ASSINAR
+                            AGORA</button>
+                    </div>
+
+                </div>
+
+                {{-- <button type="button"
+                    class="btn btn-outline-danger border-4 rounded-0 custom-btn-signup now px-5 py-3 fw-900 fs-3">ASSINAR AGORA</button> --}}
             </div>
         </div>
     </section>
     <section class="container py-5 my-5 d-flex flex-column align-items-center justify-content-center"
         style="background: transparent">
-        <h2 class="text-uppercase fw-700 fs-1" style="letter-spacing: 1px;color: #333">CHOOSE YOUR UFC FIGHT PASS PLAN</h2>
+        <h2 class="text-uppercase fw-700 fs-1" style="letter-spacing: 1px;color: #333">Escolha seu plano FB Fight Pass</h2>
         <br><br>
 
         <div class="row w-100">
             <div class="col-12 col-lg-6 mb-0 mb-5 mb-lg">
-                <x-pay-card typesubscribe="monthly pass" value="R$ 25.00">
+                <x-pay-card typesubscribe="pagamento mensal" value="R$ 25.00">
 
                 </x-pay-card>
             </div>
             <div class="col-12 col-lg-6 mb-0 mb-5 mb-lg">
-                <x-pay-card typesubscribe="annual pass" value="R$ 25.00" bordercolor="#d20a0a" toutlip={{ true }}>
+                <x-pay-card typesubscribe="pagamento anual" value="R$ 19.00" bordercolor="#d20a0a" toutlip={{ true }}>
 
                 </x-pay-card>
             </div>
         </div>
-        <p class="fst-italic fw-500">Subscription will auto-renew monthly unless cancelled prior to the applicable renewal
+        <p class="fst-italic fw-500">A assinatura será renovada automaticamente mensalmente, a menos que seja cancelada antes da renovação aplicável
         </p>
     </section>
     <section class="container-fluid py-5 d-flex flex-column align-items-center justify-content-center"

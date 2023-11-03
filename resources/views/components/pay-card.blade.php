@@ -5,7 +5,7 @@
         @if ($toutlip)
             <div class="toutlip-card">
                 <div>
-                    <p class="text-uppercase fw-900 text-white px-5 py-1" style="background: #d20a0a">most popular</p>
+                    <p class="text-uppercase fw-900 text-white px-5 py-1" style="background: #d20a0a">mais popular</p>
                 </div>
             </div>
         @endif
@@ -16,23 +16,21 @@
         <br>
         <br>
         <div>
-            <p class="fw-500">Access to UFC events, the entire UFC Fight Library, live martial arts events from around
-                the world and
-                exclusive original series and shows</p>
+            <p class="fw-700 fs-3 text-center">Acesso a todas as lutas e eventos.</p>
             <br>
-            <ul>
+            {{-- <ul>
                 <li>
                     <p class="fw-500 mb-1">Over 1,000 hours of live combat sports action from around the globe</p>
                 </li>
                 <li>
                     <p class="fw-500 mb-1">Over 1,000 hours of live combat sports action from around the globe</p>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
         <br>
         <br>
         <button type="button"
-            class="btn btn-outline-danger border-4 rounded-0 custom-btn-signup now px-5 py-3 fw-900 fs-4 shadow-sm" style="width: 70%">select</button>
+            class="btn btn-outline-danger border-4 rounded-5 custom-btn-signup now px-5 py-2 fw-900 fs-4 shadow-sm" style="width: 70%">select</button>
         {{ $slot }}
     </div>
 </div>
