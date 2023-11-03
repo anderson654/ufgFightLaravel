@@ -1,7 +1,7 @@
 <div class="shadow-lg w-100 position-relative p-5 border border-5 container-card"
     style="border-color: {{ $bordercolor }} !important">
     <!-- The only way to do great work is to love what you do. - Steve Jobs -->
-    <div class="d-flex align-items-center flex-column" style="color: #585b63">
+    <div class="d-flex align-items-center flex-column text-center" style="color: #585b63">
         @if ($toutlip)
             <div class="toutlip-card">
                 <div>

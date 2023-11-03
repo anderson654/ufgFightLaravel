@@ -41,8 +41,8 @@ button {
 }
 
 .custom-btn-login:hover {
-    border-color: red;
-    background-color: red;
+    border-color: #c80000;
+    background-color: #c80000;
 }
 
 .custom-btn-signup {
@@ -53,8 +53,8 @@ button {
 }
 
 .custom-btn-signup:hover {
-    border-color: red !important;
-    background-color: red;
+    border-color: #c80000 !important;
+    background-color: #c80000;
 }
 
 .custom-btn-signup.sub {
@@ -202,15 +202,28 @@ button {
 }
 
 .dowloadapp-img-1 {
-    text-align: center;
+    /* text-align: center;
     background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, .85) 19%, rgba(0, 0, 0, .03) 47%, #000 76%), url('/images/background2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .85) 19%, rgba(0, 0, 0, .03) 47%, #000 76%), url('/images/background2.png'); */
     /* background-image: url('/images/background2.jpg'); */
-    background-position: 50%;
+    /* background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    width: 100%; */
+
+
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .85) 0%, rgba(0, 0, 0, .03) 0%, #000 98%), url('/images/background2.png');
 }
 
 section.next-event {

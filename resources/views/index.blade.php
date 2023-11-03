@@ -10,43 +10,7 @@
 @section('body')
     <div class="clip-path-element"></div>
     <div class="container-fluid fixed-top p-0">
-        <nav class="navbar navbar-expand-lg custom-sidebar shadow-sm" id="customNav">
-            <div class="container-fluid mx-4">
-                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="300">
-                <button class="navbar-toggler border-0 my-3" type="button" data-bs-toggle="collapse"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                    data-bs-theme="dark" id="btnopenmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <div class="m-3">
-                        <button type="button"
-                            class="btn btn-outline-danger border-3 rounded-0 custom-btn-login fs-7 me-3">LOG
-                            IN</button>
-                        <button type="button"
-                            class="btn btn-outline-danger border-3 rounded-0 custom-btn-signup fs-7">sign-up</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid p-0 custom-submenu" style="width: 100%;">
-            <a href="http://">
-                <div class="d-flex justify-content-center p-4">
-                    <p class="m-0">schedule</p>
-                </div>
-            </a>
-            <a href="http://">
-                <div class="d-flex justify-content-center p-4">
-                    <p class="m-0">ppv</p>
-                </div>
-            </a>
-            <div class="d-flex justify-content-center m-3">
-                <button type="button" class="btn btn-outline-danger border-3 rounded-0 custom-btn-login sub fs-7 me-3">LOG
-                    IN</button>
-                <button type="button"
-                    class="btn btn-outline-danger border-3 rounded-0 custom-btn-signup sub fs-7">sign-up</button>
-            </div>
-        </div>
+        <x-side-bar></x-side-bar>
     </div>
     <section
         class="container-fluid p-0 m-0 pb-5 min-vh-100 position-relative d-flex flex-column align-items-center justify-content-center index"
@@ -54,18 +18,26 @@
         <div class="container-fluid px-5 content-video" id="contentConteinerVideo">
             <div class="d-flex flex-column py-4">
                 <div class="d-flex justify-content-center flex-column row">
-                    <div class="col-sm-6">
-                        <p class="fw-900 fs-900 text-uppercase" style="color: #c80000;font-size: 8rem;line-height: 1;white-space: nowrap">no fight,<br>no history</p>
+                    <div class="col-md-5">
+                        <p class="fw-900 fs-900 text-uppercase"
+                            style="color: #c80000;font-size: 6.5rem;line-height: 1;white-space: nowrap">no fight,<br>no
+                            history</p><br>
                         {{-- <p class="fs-4 ufcfont text-uppercase text-white" style="letter-spacing: 2px;">welcome to</p>
                         <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="500"><br><br> --}}
-                        <p class="text-white fs-4" style="font-weight: 500;width: 100%;text-align: justify">A FourBio Fight é uma plataforma
-                            inovadora de streaming dedicada ao universo das lutas. Com um catálogo abrangente, ela oferece acesso
-                            exclusivo a eventos ao vivo, lutas gravadas e perfis detalhados de lutadores renomados. A missão da
-                            empresa vai além do entretenimento, buscando transformar vidas por meio do poder do esporte, promovendo
-                            valores como determinação, disciplina e superação. Seja o usuário um apaixonado por artes marciais ou
+                        <p class="text-white fs-4" style="font-weight: 500;width: 100%;text-align: justify">A FourBio Fight
+                            é uma plataforma
+                            inovadora de streaming dedicada ao universo das lutas. Com um catálogo abrangente, ela oferece
+                            acesso
+                            exclusivo a eventos ao vivo, lutas gravadas e perfis detalhados de lutadores renomados. A missão
+                            da
+                            empresa vai além do entretenimento, buscando transformar vidas por meio do poder do esporte,
+                            promovendo
+                            valores como determinação, disciplina e superação. Seja o usuário um apaixonado por artes
+                            marciais ou
                             apenas curioso sobre esse universo, a FourBio Fight é o destino definitivo.</p><br><br>
                         <button type="button"
-                            class="btn btn-outline-danger border-4 rounded-5 custom-btn-signup now px-5 py-3 fw-900 fs-5" style="width: 100%">ASSINAR
+                            class="btn btn-outline-danger border-4 rounded-5 custom-btn-signup now px-5 py-3 fw-900 fs-5"
+                            style="width: 100%">ASSINAR
                             AGORA</button>
                     </div>
 
@@ -88,13 +60,36 @@
                 </x-pay-card>
             </div>
             <div class="col-12 col-lg-6 mb-0 mb-5 mb-lg">
-                <x-pay-card typesubscribe="pagamento anual" value="R$ 19.00" bordercolor="#d20a0a" toutlip={{ true }}>
+                <x-pay-card typesubscribe="pagamento anual" value="R$ 19.00" bordercolor="#d20a0a"
+                    toutlip={{ true }}>
 
                 </x-pay-card>
             </div>
         </div>
-        <p class="fst-italic fw-500">A assinatura será renovada automaticamente mensalmente, a menos que seja cancelada antes da renovação aplicável
+        <p class="fst-italic fw-500">A assinatura será renovada automaticamente mensalmente, a menos que seja cancelada
+            antes da renovação aplicável
         </p>
+    </section>
+    <section class="container-fluid p-0 py-5 d-flex flex-column align-items-center justify-content-center dowloadapp-img-1"
+        style="min-height: 100vh">
+        <div class="container mt-5 dowloadapp-img-1">
+            <p class="fw-800 fs-1" style="color: #fff;letter-spacing: 3px">A QUALQUER MOMENTO.<br>EM QUALQUER
+                LUGAR.<br>QUALQUER DISPOSITIVO.</p>
+            <p class="fw-700" style="color: #fff">Available on iOS, Android, Apple TV, Amazon Fire, ROKU, Xbox, LG and
+                Samsung Smart TVs, and SONY TVs with Android TV</p>
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-danger border-3 rounded-5 custom-btn-login fs-7 me-3">APPLE
+                STORE</button>
+            <button type="button" class="btn btn-outline-danger border-3 rounded-5 custom-btn-login fs-7 me-3">GOOGLE
+                PLAY</button>
+            {{-- <div class="container position-relative">
+                <p class="fw-800" style="color: #d20a0a;letter-spacing: 3px">HOW IT WORKS</p>
+                <div class="" style="width: 100%;padding: 5%">
+                    <img src="{{ asset('/images/dowloadapp.png') }}" alt="dowloadapp" width="100%">
+                </div>
+            </div> --}}
+        </div>
     </section>
     <section class="container-fluid py-5 d-flex flex-column align-items-center justify-content-center"
         style="background: #f4f4f4">
@@ -121,20 +116,6 @@
         </div>
     </section>
 
-    <section class="container-fluid p-0 py-5 d-flex flex-column align-items-center justify-content-center"
-        style="background: #000;min-height: 50vh">
-        <div class="container-fluid mt-5 dowloadapp-img-1">
-            <div class="container position-relative">
-                <p class="fw-800" style="color: #d20a0a;letter-spacing: 3px">HOW IT WORKS</p>
-                <p class="fw-800 fs-1" style="color: #fff;letter-spacing: 3px">ANYTIME. ANYWHERE. ANY DEVICE.</p>
-                <div class="" style="width: 100%;padding: 5%">
-                    <img src="{{ asset('/images/dowloadapp.png') }}" alt="dowloadapp" width="100%">
-                </div>
-                <p class="fw-700" style="color: #fff">Available on iOS, Android, Apple TV, Amazon Fire, ROKU, Xbox, LG and
-                    Samsung Smart TVs, and SONY TVs with Android TV</p>
-            </div>
-        </div>
-    </section>
 
     <section class="container-fluid p-0 py-5 d-flex flex-column align-items-center justify-content-center next-event"
         style="min-height: 50vh">
@@ -150,20 +131,19 @@
                     Procházka, and former
                     middleweight titleholder, Alex Pereira, battle for the vacant UFC light heavyweight crown!</p>
                 <button type="button"
-                    class="btn btn-outline-danger border-4 rounded-0 custom-btn-signup now px-5 py-3 fw-900 fs-4 shadow-sm">ORDER
+                    class="btn btn-outline-danger border-4 rounded-5 custom-btn-signup now px-5 py-2 fw-900 fs-5 shadow-sm">ORDER
                     NOW</button>
             </div>
         </div>
     </section>
     <footer class="container-fluid px-0 border-bottom border-5"
         style="background: #161616;border-color: #d20a0a !important">
-        <div class="py-4 px-2">
-            <img src="{{ asset('/images/logonotcolor.png') }}" alt="" width="200px"
-                style="object-fit: contain">
+        <div class="p-4">
+            <img src="{{ asset('/images/logonotcolor.png') }}" alt="" width="200px" style="object-fit: contain">
         </div>
         <div class="d-flex justify-content-center align-items-center py-4 px-2" style="background: #0f0f0f">
-            <p class="fw-500 mb-0" style="color: #585b63">UFC and associated designs are registered and/or owned
-                exclusively by Zuffa, LLC. © 2019 All rights reserved</p>
+            <p class="fw-500 mb-0" style="color: #585b63">FB FOUR FIGHT and associated designs are registered and/or owned
+                exclusively by CH, LLC. © 2023 All rights reserved</p>
         </div>
     </footer>
 @endsection

@@ -8,68 +8,13 @@
 
 @section('body')
     <div class="container-fluid fixed-top p-0" id="customNav">
-        <nav class="navbar navbar-expand-lg custom-sidebar shadow-sm">
-            <div class="container-fluid mx-4">
-                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="220">
-                <button class="navbar-toggler border-0 my-3" type="button" data-bs-toggle="collapse"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                    data-bs-theme="dark" id="btnopenmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    {{-- <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ppv</a>
-                        </li>
-                    </ul> --}}
-                    <div class="m-3">
-                        @auth
-                            <form class="m-0" role="form" method="post" action="{{ route('logout') }}" id="logout-form">
-                                @csrf
-                                <a href="{{ url('logout') }}"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    <button type="button"
-                                        class="btn btn-outline-danger border-3 rounded-0 custom-btn-signup fs-7">sair</button>
-                                </a>
-                            </form>
-                        @else
-                            <button type="button"
-                                class="btn btn-outline-danger border-3 rounded-0 custom-btn-login fs-7 me-3">LOG
-                                IN</button>
-                            <button type="button"
-                                class="btn btn-outline-danger border-3 rounded-0 custom-btn-signup fs-7">sign-up</button>
-                        @endauth
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid p-0 custom-submenu" style="width: 100%;">
-            <a href="http://">
-                <div class="d-flex justify-content-center p-4">
-                    <p class="m-0">schedule</p>
-                </div>
-            </a>
-            <a href="http://">
-                <div class="d-flex justify-content-center p-4">
-                    <p class="m-0">ppv</p>
-                </div>
-            </a>
-            <div class="d-flex justify-content-center m-3">
-                <button type="button" class="btn btn-outline-danger border-3 rounded-0 custom-btn-login sub fs-7 me-3">LOG
-                    IN</button>
-                <button type="button"
-                    class="btn btn-outline-danger border-3 rounded-0 custom-btn-signup sub fs-7">sign-up</button>
-            </div>
-        </div>
+        <x-side-bar></x-side-bar>
     </div>
     <section class="container-fluid min-vh-100 event-dashboard">
         <div class="px-5 d-flex w-100 align-items-end" id="contentConteiner" style="min-height: 100%">
             <div class="pt-5 width-description fw-500 fs-5">
                 <p class="text-uppercase fw-900" style="color: rgba(255,255,255,0.5)"><span class="fs-4"
-                        style="font-family: ufc;color: red;margin-right: 10px">ufc</span>Evento</p>
+                        style="font-family: ufc;color: red;margin-right: 10px">fb</span>Evento</p>
                 <p class="fw-900 fst-italic fs-1" style="color: rgba(255,255,255)">Construindo Campeões</p>
                 <p class="deecoration-one text-white fs-6 my-3">Descrição</p>
                 <p class="text-white">Prepare-se para uma experiência única no mundo da luta!
@@ -90,13 +35,6 @@
                 <br>
             </div>
         </div>
-        {{-- <div class="row py-5">
-            <div class="col-md-5 min-vh-100">
-                <div class="bg-dark p-3 rounded-2 shadow p-5">
-
-                </div>
-            </div>
-        </div> --}}
     </section>
     <section>
         <!-- Modal -->

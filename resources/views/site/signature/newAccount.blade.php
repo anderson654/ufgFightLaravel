@@ -9,7 +9,7 @@
                         <div class="p-2 px-5 w-100">
                             <div class="d-flex justify-content-between">
                                 <p class="text-uppercase text-white fw-900 fs-2">registre-se</p>
-                                <p class="text-uppercase text-white fw-900 fs-1" style="font-family: ufc">ufc</p>
+                                <p class="text-uppercase text-white fw-900 fs-1" style="font-family: ufc">FB</p>
                             </div>
                             <form method="POST" action="{{ url('register') }}">
                                 @csrf
