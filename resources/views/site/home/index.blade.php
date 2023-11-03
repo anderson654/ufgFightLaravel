@@ -17,14 +17,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    {{-- <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">schedule</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ppv</a>
                         </li>
-                    </ul>
+                    </ul> --}}
                     <div class="m-3">
                         @auth
                             <form class="m-0" role="form" method="post" action="{{ route('logout') }}" id="logout-form">

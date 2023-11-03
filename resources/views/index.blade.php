@@ -12,21 +12,21 @@
     <div class="container-fluid fixed-top p-0">
         <nav class="navbar navbar-expand-lg custom-sidebar shadow-sm" id="customNav">
             <div class="container-fluid mx-4">
-                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="85">
+                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="200">
                 <button class="navbar-toggler border-0 my-3" type="button" data-bs-toggle="collapse"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                     data-bs-theme="dark" id="btnopenmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    {{-- <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">schedule</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ppv</a>
                         </li>
-                    </ul>
+                    </ul> --}}
                     <div class="m-3">
                         <button type="button"
                             class="btn btn-outline-danger border-3 rounded-0 custom-btn-login fs-7 me-3">LOG
@@ -66,15 +66,14 @@
             <div class="d-flex flex-column align-items-center py-4">
                 <p class="fs-4 ufcfont text-uppercase text-white" style="letter-spacing: 2px;">welcome to</p>
                 <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="500"><br><br>
-                <p class="text-center text-white fs-4" style="font-weight: 500;width: 60%">Desbloqueie MAIS o seu fã de
-                    esportes de combate com o UFC Fight Pass! Lutar é o que vivemos. E ninguém
-                    traz MAIS lutas ao vivo, novos shows e eventos em vários esportes de combate de todo o mundo. Com uma
-                    oferta interminável de lutas em todas as disciplinas, há sempre algo novo para assistir. Deixe que a
-                    autoridade mundial em MMA traga a você a plataforma Ultimate 24 horas por dia, 7 dias por semana para
-                    MAIS esportes de combate, o UFC Fight Pass!</p><br><br>
+                <p class="text-center text-white fs-4" style="font-weight: 500;width: 60%">A FourBio Fight é uma plataforma
+                    inovadora de streaming dedicada ao universo das lutas. Com um catálogo abrangente, ela oferece acesso
+                    exclusivo a eventos ao vivo, lutas gravadas e perfis detalhados de lutadores renomados. A missão da
+                    empresa vai além do entretenimento, buscando transformar vidas por meio do poder do esporte, promovendo
+                    valores como determinação, disciplina e superação. Seja o usuário um apaixonado por artes marciais ou
+                    apenas curioso sobre esse universo, a FourBio Fight é o destino definitivo.</p><br><br>
                 <button type="button"
-                    class="btn btn-outline-danger border-4 rounded-0 custom-btn-signup now px-5 py-3 fw-900 fs-3">sign up
-                    now</button>
+                    class="btn btn-outline-danger border-4 rounded-0 custom-btn-signup now px-5 py-3 fw-900 fs-3">ASSINAR AGORA</button>
             </div>
         </div>
     </section>
