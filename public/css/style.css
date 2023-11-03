@@ -376,14 +376,24 @@ a.custom {
     font-weight: 900 !important
 }
 
+.titleNoFigth{
+    font-size: 6.5rem !important;
+}
+
 /* Extra Small (xs) */
 @media (max-width: 575.98px) {
     /* Estilos para telas menores que 576px */
+    .titleNoFigth{
+        font-size: 3rem !important;
+    }
 }
 
 /* Small (sm) */
 @media (min-width: 576px) {
     /* Estilos para telas maiores ou iguais a 576px */
+    .titleNoFigth{
+        font-size: 3rem !important;
+    }
 }
 
 /* Medium (md) */

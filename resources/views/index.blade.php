@@ -19,8 +19,8 @@
             <div class="d-flex flex-column py-4">
                 <div class="d-flex justify-content-center flex-column row">
                     <div class="col-md-5">
-                        <p class="fw-900 fs-900 text-uppercase"
-                            style="color: #c80000;font-size: 6.5rem;line-height: 1;white-space: nowrap">no fight,<br>no
+                        <p class="fw-900 fs-900 text-uppercase titleNoFigth"
+                            style="color: #c80000;line-height: 1;white-space: nowrap">no fight,<br>no
                             history</p><br>
                         {{-- <p class="fs-4 ufcfont text-uppercase text-white" style="letter-spacing: 2px;">welcome to</p>
                         <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="500"><br><br> --}}
