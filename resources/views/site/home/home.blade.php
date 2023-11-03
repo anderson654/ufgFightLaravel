@@ -35,7 +35,8 @@
                         </a>
                         <button type="button"
                             class="btn btn-outline-danger border-3 rounded-5 custom-btn-login px-5 py-2 fs-7 fw-700"
-                            style="text-transform: none">Trailer</button>
+                            style="text-transform: none" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" id="playVideo">Trailer</button>
                     </div>
                 </div>
             </div>
@@ -47,4 +48,40 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content d-flex p-0" style="background: transparent">
+                    <div class="modal-body">
+
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="meuVideo"
+                                src="https://player.vimeo.com/video/36737096?h=48f73fad9e&autoplay=1&title=0&byline=0&portrait=0"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
+
+@section('scripts')
+    <script>
+        $(document).ready(function() {
+            var modal = document.getElementById('exampleModal');
+            var video = document.getElementById('meuVideo');
+            var btnAutoPlay = document.getElementById('playVideo');
+
+            modal.onclick = function() {
+                modal.style.display = "none";
+                video.contentWindow.postMessage('{"method":"pause"}', '*');
+            }
+            btnAutoPlay.onclick = function() {
+                video.contentWindow.postMessage('{"method":"play"}', '*');
+            }
+        });
+    </script>
 @endsection
