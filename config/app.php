@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', env('APP_ENV') !== 'production' ? 'http://localhost' : 'https://www.fourbiofight.com.br'),
+    'url' => env('APP_URL', 'https://www.fourbiofight.com.br'),
 
     'asset_url' => env('ASSET_URL'),
 
