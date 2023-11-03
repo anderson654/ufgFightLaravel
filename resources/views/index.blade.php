@@ -12,7 +12,7 @@
     <div class="container-fluid fixed-top p-0">
         <nav class="navbar navbar-expand-lg custom-sidebar shadow-sm" id="customNav">
             <div class="container-fluid mx-4">
-                <img src="{{ asset('/images/logo.png') }}" alt="Ufc logo" width="85">
+                <img src="{{ asset('/images/logo1.png') }}" alt="Ufc logo" width="85">
                 <button class="navbar-toggler border-0 my-3" type="button" data-bs-toggle="collapse"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                     data-bs-theme="dark" id="btnopenmenu">
@@ -65,7 +65,7 @@
         <div class="container content-video" id="contentConteinerVideo">
             <div class="d-flex flex-column align-items-center py-4">
                 <p class="fs-4 ufcfont text-uppercase text-white" style="letter-spacing: 2px;">welcome to</p>
-                <img src="{{ asset('/images/logo.png') }}" alt="Ufc logo" width="500"><br><br>
+                <img src="{{ asset('/images/logo1.png') }}" alt="Ufc logo" width="500"><br><br>
                 <p class="text-center text-white fs-4" style="font-weight: 500;width: 60%">Desbloqueie MAIS o seu fã de
                     esportes de combate com o UFC Fight Pass! Lutar é o que vivemos. E ninguém
                     traz MAIS lutas ao vivo, novos shows e eventos em vários esportes de combate de todo o mundo. Com uma
