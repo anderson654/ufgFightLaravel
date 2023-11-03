@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', env('APP_URL')),
+    'url' => url('/'),
 
     'asset_url' => env('ASSET_URL'),
 
