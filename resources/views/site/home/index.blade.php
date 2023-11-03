@@ -10,7 +10,7 @@
     <div class="container-fluid fixed-top p-0" id="customNav">
         <nav class="navbar navbar-expand-lg custom-sidebar shadow-sm">
             <div class="container-fluid mx-4">
-                <img src="{{ asset('/images/logo1.png') }}" alt="Ufc logo" width="220">
+                <img src="{{ asset('/images/logo2.png') }}" alt="Ufc logo" width="220">
                 <button class="navbar-toggler border-0 my-3" type="button" data-bs-toggle="collapse"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                     data-bs-theme="dark" id="btnopenmenu">
