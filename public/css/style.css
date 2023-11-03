@@ -399,6 +399,9 @@ a.custom {
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Estilos para telas maiores ou iguais a 768px */
+    .titleNoFigth{
+        font-size: 6.5rem !important;
+    }
 }
 
 /* Large (lg) */
