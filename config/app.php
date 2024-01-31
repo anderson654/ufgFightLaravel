@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV'),
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL'),
+    'url' => env('APP_URL', 'https://www.fourbiofight.com.br'),
 
     'asset_url' => env('ASSET_URL'),
 
